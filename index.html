@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publish - The UCN Times</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splash">
+  <div class="loader"></div>
+</div>
+  <style>
+    /* Splash screen style */
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    /* Main content hidden at first */
+    #content {
+      display: none;
+    }
+
+    .loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo">Inquiry</a>
+    </div>
+    <div class="nav-right" id="nav-links">
+      <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="scholar.html">Articles</a>
+      <a href="publish.html" class="active">Publish</a>
+
+      <a href="about.html">About</a>
+     
+    </div>
+    <div class="menu-btn" id="menu-btn">&#9776;</div>
+  </nav>
+
+  <main class="page-content">
+  <h1>Contact Us</h1>
+  
+  <p>
+    <strong>Telegram:</strong> 
+    <a href="https://t.me/ucnpublisherbot" target="_blank">@ucnpublisherbot</a>
+  </p>
+  
+  <p>
+    <strong>Email:</strong> 
+    <a href="mailto:writertutblog@mail.ru">writertutblog@mail.ru</a>
+  </p>
+  
+  <p>You can also reach us through our <a href="https://t.me/theucntimes" target="_blank">Telegram channel</a> link.</p>
+</main>
+
+
+  <script src="script.js"></script>
+  <script>
+    setTimeout(() => {
+  document.getElementById("splash").style.display = "none";
+  document.getElementById("content").style.display = "flex";
+}, 2000); //  2,5 seconds
+
+  </script>
+</body>
+</html>
