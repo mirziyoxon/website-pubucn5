@@ -54,7 +54,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     document.querySelector(link.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
     });
-    setTimeout(() => {
-  document.getElementById("splash").style.display = "none";
-  document.getElementById("content").style.display = "flex";
-}, 3000); //  3 seconds
+   
